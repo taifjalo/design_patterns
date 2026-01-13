@@ -11,7 +11,7 @@ Each design pattern includes:
 
 ## Assignments and Solutions
 
-1. Factory Method [Assignment](markdown/assignments/factory_method.md) · [Solution](src/main/java/factory_method/)
+1. Factory Method · [Assignment](markdown/assignments/factory_method.md) · [Solution](src/main/java/factory_method/)
 
 2. Abstract Factory [Assignment](markdown/assignments/abstract_factory.md) · [Solution](src/main/java/abstract_factory/)
 
