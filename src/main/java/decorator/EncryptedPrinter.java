@@ -12,11 +12,11 @@ public class EncryptedPrinter extends PrinterDecorator {
     @Override
     public void print(String message) {
         String encryptedMessage = encrypt(message);
-        decoratedPrinter.print(encryptedMessage);
+        printer.print(encryptedMessage);
         System.out.println("Encrypted: " + encryptedMessage);
     }
 
-    
+
 
     // Simple encryption method (Caesar cipher with a shift of 3)
     private String encrypt(String message) {

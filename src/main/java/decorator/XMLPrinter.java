@@ -12,7 +12,7 @@ public class XMLPrinter extends PrinterDecorator {
     @Override
     public void print(String text) {
         String xmlMessage = "<message>" + text + "</message>";
-        decoratedPrinter.print(xmlMessage);
+        printer.print(xmlMessage);
         System.out.println("XML: " + xmlMessage);
     }
 }
