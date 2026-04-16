@@ -7,17 +7,17 @@ import java.util.Map;
 
 // very similar to controller in MVC
 public class Model implements Mediator {
-    private final Map<String, Controller> clients = new HashMap<>();
+    private final Map<String, Controller> users = new HashMap<>();
 
     @Override
     public void registerUser(Controller user) {
-        clients.put(user.getUsername(), user);
+        users.put(user.getUsername(), user);
     }
 
     @Override
     public void sendMessage(String sender, String recipient, String message) {
-        if (clients.containsKey(recipient)) {
-            clients.get(recipient).receiveMessage(sender, message);
+        if (users.containsKey(recipient)) {
+            users.get(recipient).receiveMessage(sender, message);
         }
     }
 }
