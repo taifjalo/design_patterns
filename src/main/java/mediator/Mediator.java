@@ -3,6 +3,6 @@
 package mediator;
 
 public interface Mediator {
-    void registerUser(Controller client);
+    void registerUser(Controller user);
     void sendMessage(String sender, String from, String message);
 }
