@@ -10,7 +10,7 @@ public class Model implements Mediator {
     private final Map<String, Controller> clients = new HashMap<>();
 
     @Override
-    public void registerClient(Controller client) {
+    public void registerUser(Controller client) {
         clients.put(client.getUsername(), client);
     }
 

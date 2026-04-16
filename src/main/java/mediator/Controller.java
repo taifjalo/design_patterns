@@ -15,7 +15,7 @@ public class Controller {
         this.username = username;
         this.mediator = mediator;
         this.chatArea = chatArea;
-        mediator.registerClient(this);
+        mediator.registerUser(this);
     }
 
     public String getUsername() {
